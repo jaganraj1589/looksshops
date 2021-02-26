@@ -1,0 +1,264 @@
+{{ header }}
+
+{# <div id="common-home" class="container">
+  <div class="row">{{ column_left }}
+    {% if column_left and column_right %}
+    {% set class = 'col-sm-6' %}
+    {% elseif column_left or column_right %}
+    {% set class = 'col-sm-9' %}
+    {% else %}
+    {% set class = 'col-sm-12' %}
+    {% endif %}
+    <div id="content" class="{{ class }}">{{ content_top }}{{ content_bottom }}</div>
+    {{ column_right }}</div>
+</div> #}
+
+
+<section>
+  <div id="slider-animation" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#slider-animation" data-slide-to="0" class="active"></li>
+      <li data-target="#slider-animation" data-slide-to="1"></li>
+      <li data-target="#slider-animation" data-slide-to="2"></li>
+    </ul> <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active"> <img src="img/banner1.jpg" alt="Los Angeles">
+        <div class="text-box text-box-adj">
+          <h2 class="wow slideInRight" data-wow-duration="2s">GET <span> 35% </span> OFF<br> TOP 5 PLANTS PACK</h2>
+        </div>
+      </div>
+      <div class="carousel-item"> <img src="img/banner2.jpg" alt="New York">
+        <div class="text-box">
+          <h2 class="wow slideInRight" data-wow-duration="2s">GET <span> 35% </span> OFF<br> TOP 5 PLANTS PACK</h2>
+        </div>
+      </div>
+      <div class="carousel-item"> <img src="img/banner3.jpg" alt="New York">
+        <div class="text-box ">
+          <h2 class="wow slideInRight" data-wow-duration="2s">GET <span> 35%</span> OFF<br> TOP 5 PLANTS PACK</h2>
+        </div>
+      </div>
+    </div> <!-- Left and right controls --> <a class="carousel-control-prev" href="#slider-animation" data-slide="prev"> <span class="carousel-control-prev-icon"></span> </a> <a class="carousel-control-next" href="#slider-animation" data-slide="next"> <span class="carousel-control-next-icon"></span> </a>
+  </div>
+</section>
+
+<section>
+  <div class="container wow fadeInUp">
+    <div class="row">
+      <div class="col-lg-12 ">
+        <div class="box-cont">
+          <div class="row box-algn-c ">
+            <div class="col-lg-1"><img src="img/click.png"></div>
+            <div class="col-lg-2 mt-2">
+              <h3>Free Click and Collect</h3>
+              <p>Free delivery for all order</p>
+            </div>
+            <div class="col-lg-1"><img src="img/guarantee.png"></div>
+            <div class="col-lg-2 mt-2">
+              <h3>5 Years Guarentee</h3>
+              <p>On most plants that we classify</p>
+            </div>
+            <div class="col-lg-1"><img src="img/environment.png"> </div>
+            <div class="col-lg-2 mt-2">
+              <h3>Environment Matters</h3>
+              <p>We believe in the right decision</p>
+            </div>
+            <div class="col-lg-1"><img src="img/help.png"></div>
+            <div class="col-lg-2 mt-2">
+              <h3>Help Center</h3>
+              <p>24/7 Support Sysytem</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="product-description-review-area wow fadeInUp">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="mb-4">Exclusives</h2>
+          <!--=======  product description review container  =======-->
+          <div class="tab-slider-wrapper product-description-review-container">
+            <nav>
+              <div class="nav nav-tabs " id="nav-tab" role="tablist"> <a class="nav-item nav-link active" id="description-tab" data-toggle="tab" href="#product-description" role="tab" aria-selected="true">Top Deals</a> <a class="nav-item nav-link" id="review-tab" data-toggle="tab" href="#review" role="tab" aria-selected="false">New Arrivals</a> </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <div class="tab-pane fade show active" id="product-description" role="tabpanel" aria-labelledby="description-tab">
+                <!--=======  product description  =======-->
+                <div class="product-description">
+                  <div class="content">
+                    <div id="filter">
+                      <div class="item" data-food="nature">
+                        <div class="row">
+                          <div class="col-lg-6 ip-img"> <img src="img/exclusive1.png" alt="nature" class="ex-mob"></div>
+                          <div class="col-lg-6"> <img src="img/exclusive2.png" alt="nature" class="off-im">
+                            <div class="row ">
+                              <div class="col-lg-12">
+                                <div class="bg-whit">
+                                  <div class="row">
+                                    <div class="col-lg-4 col-6 mt-3 mob-ml-off">
+                                      <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/fp8.jpg" alt="nature" class="img-responsive image">
+                                        <div class="overlay">
+                                          <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                                        </div>
+                                        <div>
+                                          <h5><a href="detail.php">French Lavender</a></h5>
+                                          <p>$329.99</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6 mob-ml-off mt-3 ">
+                                      <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/fp2.jpg" alt="nature" class="img-responsive image">
+                                        <div class="overlay">
+                                          <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                                        </div>
+                                        <div>
+                                          <h5><a href="detail.php">French Lavender</a></h5>
+                                          <p>$329.99</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div class="col-lg-4 col-6 mob-ml-off mt-3">
+                                      <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/fp6.jpg" alt="nature" class="img-responsive image">
+                                        <div class="overlay">
+                                          <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                                        </div>
+                                        <div>
+                                          <h5><a href="detail.php">French Lavender</a></h5>
+                                          <p>$329.99</p>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> <!-- </div> -->
+                  </div>
+                </div>
+                <!--=======  End of product description  =======-->
+              </div>
+              <div class="tab-pane fade" id="review" role="tabpanel" aria-labelledby="review-tab">
+                <!--=======  review content  =======-->
+                <!--=======  End of review content  =======-->
+              </div>
+            </div>
+          </div>
+          <!--=======  End of product description review container  =======-->
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--=======  End of product description review   =======-->
+</section><!-- Exclusive sec -->
+<div class="container wow fadeInUp">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="tabC">
+        <h2>Featured Products</h2>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation"> <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Pet Friendly</a> </li>
+          <li class="nav-item" role="presentation"> <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Low Light</a> </li>
+          <li class="nav-item" role="presentation"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Bright Light</a> </li>
+          <li class="nav-item" role="presentation"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact1" role="tab" aria-controls="contact1" aria-selected="false">Drought Resistant</a> </li>
+          <li class="nav-item" role="presentation"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact2" role="tab" aria-controls="contact2" aria-selected="false">Air Purifying</a> </li>
+          <li class="nav-item" role="presentation"> <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact3" role="tab" aria-controls="contact3" aria-selected="false">Flowering</a> </li>
+        </ul>
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row"> <?php for ($i = 1; $i <= 10; $i++) { ?> <div class="col-5 mob-ml ">
+                  <!--   <div class="row"> -->
+                  <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/11.jpg" alt="nature" class="img-responsive image">
+                    <div class="overlay">
+                      <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href="detail.php"> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                    </div>
+                    <div>
+                      <h5><a href="detail.php">French Lavender</a></h5>
+                      <p>$329.99</p>
+                    </div>
+                  </div>
+                </div> <?php } ?> </div>
+          </div>
+          <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="row"> <?php for ($i = 1; $i <= 10; $i++) { ?> <div class="col-5 mob-ml">
+                  <!--   <div class="row"> -->
+                  <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/12.jpg" alt="nature" class="img-responsive image">
+                    <div class="overlay">
+                      <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                    </div>
+                    <div>
+                      <h5><a href="detail.php">French Lavender</a></h5>
+                      <p>$329.99</p>
+                    </div>
+                  </div>
+                </div> <?php } ?> </div>
+          </div>
+          <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row"> <?php for ($i = 1; $i <= 10; $i++) { ?> <div class="col-5 mob-ml">
+                  <!--   <div class="row"> -->
+                  <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/13.jpg" alt="nature" class="img-responsive image">
+                    <div class="overlay">
+                      <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                    </div>
+                    <div>
+                      <h5><a href="detail.php">French Lavender</a></h5>
+                      <p>$329.99</p>
+                    </div>
+                  </div>
+                </div> <?php } ?> </div>
+          </div>
+          <div class="tab-pane fade" id="contact1" role="tabpanel" aria-labelledby="contact-tab">
+            <div class="row"> <?php for ($i = 1; $i <= 10; $i++) { ?> <div class="col-5 mob-ml">
+                  <!--   <div class="row"> -->
+                  <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/14.jpg" alt="nature" class="img-responsive image">
+                    <div class="overlay">
+                      <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                    </div>
+                    <div>
+                      <h5><a href="detail.php">French Lavender</a></h5>
+                      <p>$329.99</p>
+                    </div>
+                  </div>
+                </div> <?php } ?> </div>
+          </div>
+          <div class="tab-pane fade" id="contact2" role="tabpane2" aria-labelledby="contact-tab">
+            <div class="row"> <?php for ($i = 1; $i <= 10; $i++) { ?> <div class="col-5 mob-ml">
+                  <!--   <div class="row"> -->
+                  <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/15.jpg" alt="nature" class="img-responsive image">
+                    <div class="overlay">
+                      <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                    </div>
+                    <div>
+                      <h5><a href="detail.php">French Lavender</a></h5>
+                      <p>$329.99</p>
+                    </div>
+                  </div>
+                </div> <?php } ?> </div>
+          </div>
+          <div class="tab-pane fade" id="contact3" role="tabpane3" aria-labelledby="contact-tab">
+            <div class="row"> <?php for ($i = 1; $i <= 10; $i++) { ?> <div class="col-5 mob-ml">
+                  <!--   <div class="row"> -->
+                  <div class="item ipad-width-img ov1" data-food="cars"> <img src="img/16.jpg" alt="nature" class="img-responsive image">
+                    <div class="overlay">
+                      <div class="text"> <button type="button" class="btn btn-secondary">Add to Cart</button> <a href=""> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
+                    </div>
+                    <div>
+                      <h5><a href="detail.php">French Lavender</a></h5>
+                      <p>$329.99</p>
+                    </div>
+                  </div>
+                </div> <?php } ?> </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{ footer }}
