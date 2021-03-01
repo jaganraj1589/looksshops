@@ -94,6 +94,8 @@ class ControllerCommonCart extends Controller {
 				$total = false;
 			}
 
+			$total_amount = $total;
+
 			$data['products'][] = array(
 				'cart_id'   => $product['cart_id'],
 				'thumb'     => $image,
@@ -132,6 +134,9 @@ class ControllerCommonCart extends Controller {
 
 		$data['cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', true);
+
+		//new items
+		$data['cart_total'] = $total_amount;
 
 		return $this->load->view('common/cart', $data);
 	}
