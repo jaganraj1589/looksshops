@@ -58,6 +58,8 @@ class ControllerExtensionModuleLatest extends Controller {
 				);
 			}
 
+			$data['block_name'] = $setting['name'];
+
 			return $this->load->view('extension/module/latest', $data);
 		}
 	}
