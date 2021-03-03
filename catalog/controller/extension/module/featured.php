@@ -6,7 +6,7 @@ class ControllerExtensionModuleFeatured extends Controller {
 		$this->load->model('catalog/product');
 
 		$this->load->model('tool/image');
-
+		
 		$data['products'] = array();
 
 		if (!$setting['limit']) {
@@ -68,6 +68,7 @@ class ControllerExtensionModuleFeatured extends Controller {
 		}
 
 		if ($data['products']) {
+			$data['block_name'] = $setting['name'];
 			return $this->load->view('extension/module/featured', $data);
 		}
 	}
