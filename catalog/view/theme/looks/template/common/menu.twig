@@ -84,7 +84,7 @@
         role="menu"
         aria-labelledby="dropdownMenu"
       >
-        {% for category in categories %} {% if category.children %}
+        {% for category in all_categories %} {% if category.children %}
         <li class="dropdown nav-item">
           <a
             href="{{ category.href }}"
@@ -100,7 +100,9 @@
               <ul class="list-unstyled">
                 {% for child in children %}
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ child.href }}">{{ child.name }}</a>
+                  <a class="nav-link" href="{{ child.href }}">{{
+                    child.name
+                  }}</a>
                 </li>
                 {% endfor %}
               </ul>
