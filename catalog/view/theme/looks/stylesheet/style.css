@@ -1858,7 +1858,7 @@ input[type=submit] {
 
 }
 
-.dropdown a
+.dropdown .dropbtn
 
 {
 
@@ -1866,7 +1866,9 @@ color: white;
 
 }
 
-
+.mainnav a{
+  color: white;
+}
 
 .dropbtn {
 
@@ -1882,6 +1884,7 @@ color: white;
 
   width: 270px;
 
+  
       border-radius: 0px;
 
 }
@@ -1988,41 +1991,11 @@ color: white;
 
 .dropdown-menu {
 
-    position: absolute;
-
-    top: 91%;
-
-    left: 0;
-
-    z-index: 1000;
-
-    display: none;
-
-    float: left;
-
-    min-width: 10rem;
-
-    padding:  0px !important;
-
-    margin: .125rem 0 0;
-
-    font-size: 1rem;
-
-    color: #212529;
-
-    text-align: left;
-
-    list-style: none;
-
-    background-color: #fff;
-
-    background-clip: padding-box;
+    
 
      border: 0px !important; 
 
-     border-radius: 0px !important; 
-
-      width: 100% ;
+    
 
 }
 
@@ -2038,6 +2011,11 @@ color: white;
 
     line-height: 2;
 
+}
+
+.inlineDropdown a{
+
+  font-size: 0.8em;
 }
 
 .copyright {
