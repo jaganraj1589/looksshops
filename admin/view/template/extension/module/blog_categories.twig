@@ -1,0 +1,73 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+     
+      <h1>{{ heading_categories_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-list"></i>{{category_table_heading}}</h3>
+        <h3 class="panel-title pull-right ">
+          <a href="{{ create_category_url }}"><i class="fa fa-plus"></i>{{create_new}}</a>
+        </h3>
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered" >
+          <thead>
+            <tr>
+              <td>{{ category_id }} </td>
+              <td>{{ category_name }}</td>
+              <td>{{ text_category_status }}</td>
+              <td class="text-right">{{ text_action }}</td>
+            </tr>
+          </thead>
+          
+          {% for category in categories %}
+          <tbody>
+            <tr>
+              <td>{{ category.category_id }}</td>
+              <td>{{ category.name }}</td>
+              <td>{{ category.blog_category_status }}</td>
+
+              <td class="text-right">
+                <a class="btn btn-primary " href="{{ category_edit_url }}&category_id={{ category.category_id }}"><span class="fa fa-pencil"></span></a>
+                <a  class="btn btn-danger" href="#" title="{{ text_delete }}" onclick='confirm_delete("{{ category_delete_url }}&category_id={{ category.category_id }}");return false;'><span class="fa fa-trash"></span></a>
+              </td>
+            </tr>
+          </tbody>
+          {% endfor %}
+        </table>
+        <div class="row">
+          <div class="col-sm-6 text-left">{{ results }}</div>
+          <div class="col-sm-6 text-right">{{pagination }}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function confirm_delete(category_delete_url) {
+  var msg=confirm("Are you sure you want to delete ?");
+  if (msg==true)
+  {
+    window.location.href = category_delete_url;
+  }
+}
+</script>
+
+{{ footer }}
