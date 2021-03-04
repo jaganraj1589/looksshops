@@ -85,7 +85,7 @@
         aria-labelledby="dropdownMenu"
       >
         {% for category in categories %} {% if category.children %}
-        <li class="dropdown">
+        <li class="dropdown nav-item">
           <a
             href="{{ category.href }}"
             class="dropdown-toggle"
@@ -106,7 +106,7 @@
               </ul>
               {% endfor %}
             </div>
-            <a href="{{ category.href }}" class="see-all"
+            <a class="nav-link" href="{{ category.href }}" class="see-all"
               >{{ text_all }} {{ category.name }}</a
             >
           </div>

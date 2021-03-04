@@ -22,15 +22,19 @@
 
       <ul class="footer_ul_amrc mt-4">
 
-        <li><a href="about.php">About</a></li>
+        {% if informations %}
+          {% for information in informations %}
+            <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+          {% endfor %}
+        {% endif %}
 
-        <li><a href="register.php">Login & Register</a></li>
+        <li><a href="{{ account }}">Login & Register</a></li>
 
-        <li><a href="contact.php">Contact</a></li>
+        {# <li><a href="{{ contact }}">Contact</a></li>
 
-        <li><a href="">Share & Care</a></li>
+        <li><a href="{{account}}">Share & Care</a></li>
 
-        <li><a href="">Downloads</a></li>
+        <li><a href="">Downloads</a></li> #}
 
       </ul>
 
@@ -840,7 +844,12 @@ $(".input-number2").keydown(function (e) {
 
  </script>
 
-
+ {% for style in styles %}
+ <link href="{{ style.href }}" type="text/css" rel="{{ style.rel }}" media="{{ style.media }}" />
+ {% endfor %}
+ {% for script in scripts %}
+ <script src="{{ script }}" type="text/javascript"></script>
+ {% endfor %}
 
 </body>
 
