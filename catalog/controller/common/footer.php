@@ -1,6 +1,8 @@
 <?php
-class ControllerCommonFooter extends Controller {
-	public function index() {
+class ControllerCommonFooter extends Controller
+{
+	public function index()
+	{
 		$this->load->language('common/footer');
 
 		$this->load->model('catalog/information');
@@ -58,7 +60,14 @@ class ControllerCommonFooter extends Controller {
 
 		$data['scripts'] = $this->document->getScripts('footer');
 		$data['styles'] = $this->document->getStyles('footer');
-		
+
+		//Fetch Blog data
+		$this->load->model('extension/blog/blog');
+		$data['articles'] = $this->model_extension_blog_blog->getLatestArticles(3);
+		array_walk($data['articles'], function (&$key) {
+			$key['href'] = $this->url->link('extension/blog/article', 'article_id=' . $key['article_id']);
+		});
+
 		return $this->load->view('common/footer', $data);
 	}
 }

@@ -49,43 +49,28 @@
       <!--headin5_amrc-->
 
       <ul class="footer_ul_amrc">
+      {% if articles %}
+        {% for article in articles %}
+          <li>
 
-        <li>
+            <div class="row">
 
-          <div class="row">
+              <div class="col-lg-3 col-3"> <img src="{{article.blog_image}}" class="mt-2"></div>
 
-            <div class="col-lg-3 col-3"> <img src="img/f1.png" class="mt-2"></div>
+              <div class="col-lg-9 col-9 p-font mt-2"> <a href="{{ article.href }}">
 
-            <div class="col-lg-9 col-9 p-font mt-2"> <a href="http://webenlance.com ">
+                {# <p>19 Jan,2020</p> #}
+                <p>{{ article.created_at|date('d M,Y') }}</p>
 
-              <p>19 Jan,2020</p>
+                <p>{{article.title}}</p>
 
-              <p>A beginner�s guide to gardening in the UAE, indoors and outdoors</p>
+                </a> </div>
 
-              </a> </div>
+            </div>
 
-          </div>
-
-        </li>
-
-        <li>
-
-          <div class="row">
-
-            <div class="col-lg-3 col-3"> <img src="img/f1.png" class="mt-2"></div>
-
-            <div class="col-lg-9 col-9 p-font mt-2"> <a href="http://webenlance.com ">
-
-              <p>19 Jan,2020</p>
-
-              <p>A beginner�s guide to gardening in the UAE, indoors and outdoors</p>
-
-              </a> </div>
-
-          </div>
-
-        </li>
-
+          </li>
+        {% endfor %}
+      {% endif %}
       </ul>
 
       <!--footer_ul_amrc ends here-->
