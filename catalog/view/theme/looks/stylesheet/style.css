@@ -1024,10 +1024,10 @@ body.mobile-nav-active #mobile-nav {
 
 .input-number3{font-size:13px!important; text-align:center;}
 
-.add-to-cart h1{ font-size:40px;}
+.add-to-cart h1{ font-size:40px; margin-bottom: 0;}
 
 
-
+.pricing{align-items: center;}
 
 
 
@@ -2604,7 +2604,7 @@ footer{  padding:20px 0px;}
 
 
 
-.mt-3, .my-3{ margin:0px 0px!important;}
+/* .mt-3, .my-3{ margin:0px 0px!important;} */
 
 .off-im{ width:100%;}
 
@@ -3295,9 +3295,11 @@ footer h4{ margin-top:25px;}
 
 
 
+.headerSearch{
+  display: flex;
+}
 
-
-.1st-ord{order:1;}
+.first-ord{order:1;}
 
 .copyright ul{ margin:5px 0px; padding:0px 0px; float:none; text-align:left;}
 
