@@ -85,14 +85,14 @@
         aria-labelledby="dropdownMenu"
       >
         {% for category in all_categories %} {% if category.children %}
-        <li class="dropdown nav-item">
+        <li class="dropdown dropdown-submenu drop">
           <a
             href="{{ category.href }}"
             class="dropdown-toggle"
             data-toggle="dropdown"
             >{{ category.name }}</a
           >
-          <div class="dropdown-menu">
+          <div class="dropdown-menu inlineDropdown">
             <div class="dropdown-inner">
               {% for children in
               category.children|batch(category.children|length /
@@ -125,13 +125,12 @@
       </ul>
     </div>
 
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-2">
       {% for category in categories %} {% if category.children %}
-      <li class="dropdown nav-item">
+      <li class="dropdown topmenuDrop nav-item">
         <a
           href="{{ category.href }}"
           class="dropdown-toggle nav-link"
-          data-toggle="dropdown"
           >{{ category.name }}</a
         >
         <div class="dropdown-menu inlineDropdown">

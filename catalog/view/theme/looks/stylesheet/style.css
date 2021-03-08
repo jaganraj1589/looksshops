@@ -1585,6 +1585,11 @@ li.nav-item{ margin:0px 0px!important; font-size:14px;}
   margin-top: 1em;
   margin-bottom: 1em;
 }
+
+.blog-button .btn-primary{
+  background-color: #139929;
+  border-color: #139929;
+}
 .blog-search{
   display: flex;
   justify-content: space-between;
@@ -1928,7 +1933,7 @@ color: white;
     -moz-border-radius: 0 6px 6px;
 
     border-radius: 0 6px 6px 6px;
-    transition: 0.2s 1s;
+    transition: 0.2s 0.5s;
     display: block;
     visibility: hidden;
 }
@@ -1941,6 +1946,35 @@ color: white;
     transition-delay: 0s;
     visibility: visible;
 }
+
+.topmenuDrop>.dropdown-menu {
+
+  top: 33px;
+  left: -20px;
+
+       margin-top: 11px ;
+
+    margin-left: 26px;
+
+    -webkit-border-radius: 0 6px 6px 6px;
+
+    -moz-border-radius: 0 6px 6px;
+
+    border-radius: 0 6px 6px 6px;
+    transition: 0.2s 0.5s;
+    display: block;
+    visibility: hidden;
+}
+
+
+
+.topmenuDrop:hover>.dropdown-menu {
+
+    display: block;
+    transition-delay: 0s;
+    visibility: visible;
+}
+
 .featuredCol .tabC{
   margin-top: 2em;
 }
@@ -2646,7 +2680,7 @@ footer .ml-4, .mx-4{ margin-left:0px!important;}
 
 .single-slider-product--list-view{ margin-top:0px;}
 
-.sidebar-widget-title{ margin-top:0px;}
+.sidebar-widget-title{ margin-top:0px; text-transform: uppercase;}
 
 
 

@@ -30,8 +30,13 @@
                                     </div>
                                     
                                     <div class="blog-excerpt">{{ article.description|slice(0, 400) ~ '...' }}</div>
-                                    <a href="{{article.href}}" class="btn btn-primary hidden-xs button_continue">{{button_blog_continue}}</a>
-                                    <a href="{{get_single_article}}&article_id={{article.article_id}}" class="btn btn-primary btn-block visible-xs-block button_continue">{{button_blog_continue}}</a>
+
+                                    <div class="blog-button">
+
+                                        <a href="{{article.href}}" class="btn btn-primary hidden-xs button_continue">{{button_blog_continue}}</a>
+                                        <a href="{{get_single_article}}&article_id={{article.article_id}}" class="btn btn-primary visible-xs-block button_continue">{{button_blog_continue}}</a>
+                                    </div>
+                                   
                                 </div>
                             {% endfor %}
                             <div class="row pagination-margin">
