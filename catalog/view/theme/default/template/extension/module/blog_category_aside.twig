@@ -1,8 +1,0 @@
-<div id="blog-trending">
-    <h4 class="headings_right heading_info"> {{ heading_title }}</h4>
-        <ul class="list-unstyled category_list_style">
-            {% for category in categories %}
-               <li class="blog_category_list"><a href="{{ category.href }}" style="color:#000;">{{ category.name }} ({{ category.countArticles }})</a> </li>
-            {% endfor %}
-        </ul>
-</div>                                                       

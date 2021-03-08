@@ -1,8 +1,0 @@
-{{header}}
-<div id="blog-trending">
-    <h4 class="headings_right heading_info">{{ heading_title }}</h4>
-       
-        {% for tag in tags %}
-               <a class="btn btn-default btn-md btn_tag" href="{{ href }}&tag={{ tag.tag }}">#{{ tag.tag }}</a> 
-            {% endfor %}
-</div>                                                       

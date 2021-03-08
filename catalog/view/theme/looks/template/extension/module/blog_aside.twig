@@ -1,0 +1,10 @@
+<div id="blog-trending">
+    <h4 class="headings_right heading_info">Latest Articles</h4>
+        <ul class="list-unstyled list_style">
+            {% for article in articles %}
+               <li class="featured_article_list">
+               	<a href="{{ article.href }}" class="blog_aside_list_links">{{ article.title }}</a> 
+               </li>
+            {% endfor %}
+        </ul>
+</div>                                                       

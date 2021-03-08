@@ -1574,12 +1574,22 @@ li.nav-item{ margin:0px 0px!important; font-size:14px;}
 
 .tabC  .tab-content{ background:#FFFFFF; padding:15px;}
 
-.tabC h2{ margin-bottom:30px;}
+.tabC h2{ margin-bottom:30px;     border-left: solid 4px #139929;
+  padding-left: 0.3em;}
 
 
 
-
-
+.blog-button{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.blog-search{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
 .show-m{ margin-top:50px;}
 
 
@@ -1916,7 +1926,9 @@ color: white;
     -moz-border-radius: 0 6px 6px;
 
     border-radius: 0 6px 6px 6px;
-
+    transition: 0.2s 1s;
+    display: block;
+    visibility: hidden;
 }
 
 
@@ -1924,9 +1936,12 @@ color: white;
 .dropdown-submenu:hover>.dropdown-menu {
 
     display: block;
-
+    transition-delay: 0s;
+    visibility: visible;
 }
-
+.featuredCol .tabC{
+  margin-top: 2em;
+}
 
 
 .dropdown-submenu>a:after {
@@ -2011,6 +2026,10 @@ color: white;
 
     line-height: 2;
 
+}
+
+.inlineDropdown{
+  padding: 1em;
 }
 
 .inlineDropdown a{
