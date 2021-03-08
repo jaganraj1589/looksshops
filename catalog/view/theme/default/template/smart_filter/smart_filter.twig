@@ -2,7 +2,7 @@
   {% if pricr_filter_status==1 %}
   <div class="card">
     <div class=" card-head" id="headingOne">
-      <h2 class="text h2" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <h2 class="filterHead h2" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
           {{text_price}}
       </h2>
     </div>
@@ -27,7 +27,7 @@
   {% if categories %}
   <div class="card">
     <div class=" card-head" id="cat_row_{{categories.category_id}}">
-      <h2 class="text h2" data-toggle="collapse" data-target="#col_{{categories.category_id}}" aria-expanded="true" aria-controls="col_{{categories.category_id}}">
+      <h2 class="filterHead h2" data-toggle="collapse" data-target="#col_{{categories.category_id}}" aria-expanded="true" aria-controls="col_{{categories.category_id}}">
           {{text_categories}}
       </h2>
     </div>
@@ -68,7 +68,7 @@
   {% if manufacturers is not null and manufacturers is not empty %}
    <div class="card">
     <div class=" card-head" id="manu_row_{{manufacturers.manufacturer_id}}">
-      <h2 class="text h2" data-toggle="collapse" data-target="#coll_{{manufacturers.manufacturer_id}}" aria-expanded="true" aria-controls="coll_{{manufacturers.manufacturer_id}}">
+      <h2 class="filterHead h2" data-toggle="collapse" data-target="#coll_{{manufacturers.manufacturer_id}}" aria-expanded="true" aria-controls="coll_{{manufacturers.manufacturer_id}}">
           {{text_manufrecturer}}
       </h2>
     </div>
@@ -102,7 +102,7 @@
   {% for option in options%}
    <div class="card">
     <div class=" card-head" id="option_row_{{option.option_id}}">
-      <h2 class="text h2" data-toggle="collapse" data-target="#colleps_row_{{option.option_id}}" aria-expanded="true" aria-controls="colleps_row_data-page{{option.option_id}}">
+      <h2 class="filterHead h2" data-toggle="collapse" data-target="#colleps_row_{{option.option_id}}" aria-expanded="true" aria-controls="colleps_row_data-page{{option.option_id}}">
           {{option.name}}
       </h2>
     </div>
@@ -134,7 +134,7 @@
 {% for attribute in attributes %}
   <div class="card">
     <div class=" card-head" id="attribute_row_{{attribute.attribute_group_id}}">
-      <h2 class="text h2" data-toggle="collapse" data-target="#colleps_row_{{attribute.attribute_group_id}}" aria-expanded="true" aria-controls="colleps_row_{{attribute.attribute_group_id}}">
+      <h2 class="filterHead h2" data-toggle="collapse" data-target="#colleps_row_{{attribute.attribute_group_id}}" aria-expanded="true" aria-controls="colleps_row_{{attribute.attribute_group_id}}">
           {{attribute.name}}
       </h2>
     </div>

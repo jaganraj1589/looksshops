@@ -1599,7 +1599,9 @@ li.nav-item{ margin:0px 0px!important; font-size:14px;}
 .top-bar .fa{ margin-right:8px;}
 
 
-
+.filterHead{
+  padding: 10px;
+}
 
 
 .loval{ float:left; margin-right:10px;}
