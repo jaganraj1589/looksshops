@@ -1,0 +1,127 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <h1>{{ heading_comments_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-list"></i>{{ comments_list }}</h3>
+        
+      </div>
+      <div class="panel-body">
+        <table class="table table-bordered " id="myTable">
+          <thead>
+            <tr>
+              <td>User Name</td>
+              <td>Comments</td>
+              <td>Post</td>
+              <td>Enable/Disable</td>
+              <td class="text-right">Action</td>
+            </tr>
+          </thead>
+         
+          {% for data in comments_detail %}
+          <tbody>
+            <tr>
+              <td>{{data.customer_name}}</td>
+              <td>{{data.comment}}</td>
+
+              <td><a href="{{article_url}}&article_id={{data.article_id}}" targert="_blank">{{data.title}}</a></td>
+            
+              <td>
+              {% if data.status == 1 %}
+              <input class="toggle-event" type="checkbox" checked data-toggle="toggle" data-size="small" id="{{ data.comment_id}}">
+              {% else %}
+                  <input class="toggle-event" type="checkbox"  data-toggle="toggle" data-size="small" id="{{ data.comment_id}}">
+                {% endif %}
+              </td>
+
+              <td class="text-right"> 
+                <a type="link" class="btn btn-primary" data-toggle="modal" data-target="#{{data.comment_id}}"><i class="fa fa-pencil"></i></a>
+                <a type="link"  class="btn btn-danger" href="{{ comment_delete_url }}&comment_id={{ data.comment_id }}&parent_id={{ data.comment_parent_id }}"><i class="fa fa-trash"></i></a>
+              </td>
+            </tr>
+             <!-- Modal -->
+            <div class="modal fade" id="{{data.comment_id}}" role="dialog">
+              <div class="modal-dialog">
+              
+                <!-- Modal content-->
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Edit Comment</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form class="form-group" action="{{update_comment_url}}" method="POST">
+                      <textarea class="form-control" name="comment" rows="4" required="">{{ data.comment }}</textarea>
+                  </div>
+                  <input type="hidden" name="id" value="{{data.comment_id}}">
+                  <div class="modal-footer">
+                    <input type="submit" class="btn btn-primary" value="Update">
+                    </form>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+          </tbody>
+          {% endfor %}
+        </table>
+        <div class="row">
+          <div class="col-sm-6 text-left">{{ results }}</div>
+          <div class="col-sm-6 text-right">{{ pagination }}</div>
+        </div>
+      </div>
+    </div>   
+  </div>
+</div>  
+
+{{ footer }}
+
+<script>
+  $(function() {
+    $('.toggle-event').change(function() {
+      var comment_id = $(this).prop('id');
+      var status = $(this).prop('checked');
+
+      
+      if(status == true){
+        status = 1;
+      }
+      else{
+        status = 0;
+      }
+
+      var data = { 
+                'comment_id'   : comment_id,
+                'status': status 
+            };
+
+            $.ajax({ 
+                type       : 'POST',
+                url        : '{{ update_comment_status }}',
+                data       : data,
+                dataType   : 'html',
+                success    : function() {  
+                }
+            });
+
+    });
+  });
+</script>

@@ -92,7 +92,7 @@
             data-toggle="dropdown"
             >{{ category.name }}</a
           >
-          <div class="dropdown-menu inlineDropdown">
+          <div class="dropdown-menu">
             <div class="dropdown-inner">
               {% for children in
               category.children|batch(category.children|length /
@@ -125,9 +125,9 @@
       </ul>
     </div>
 
-    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-2">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0 ml-5">
       {% for category in categories %} {% if category.children %}
-      <li class="dropdown dropdown-submenu">
+      <li class="dropdown nav-item">
         <a
           href="{{ category.href }}"
           class="dropdown-toggle nav-link"

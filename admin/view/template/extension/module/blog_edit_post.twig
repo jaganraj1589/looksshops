@@ -1,0 +1,222 @@
+{{ header }}{{ column_left }}
+<div id="content">
+  <div class="page-header">
+    <div class="container-fluid">
+      <div class="pull-right">
+        <button type="submit" form="form-module" data-toggle="tooltip" title="{{ button_save }}" class="btn btn-primary"><i class="fa fa-save"></i></button>
+        <a href="{{ cancel }}" data-toggle="tooltip" title="{{ button_cancel }}" class="btn btn-default"><i class="fa fa-reply"></i></a>
+        </div>
+      <h1>{{ heading_blog_edit_title }}</h1>
+      <ul class="breadcrumb">
+        {% for breadcrumb in breadcrumbs %}
+        <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="container-fluid">
+    {% if error_warning %}
+    <div class="alert alert-danger alert-dismissible"><i class="fa fa-exclamation-circle"></i> {{ error_warning }}
+      <button type="button" class="close" data-dismiss="alert">&times;</button>
+    </div>
+    {% endif %}
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title"><i class="fa fa-pencil"></i>{{blog_edit_heading}}</h3>
+      </div>
+      <div class="panel-body">
+        <form action="{{ action }}" method="post" onsubmit="inputTags()" enctype="multipart/form-data" id="form-module" class="form-horizontal">
+          <input type="hidden" name="id" value="{{post.article_id}}" readonly="readonly">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{text_title}}:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="title" placeholder="Title" value="{{ post.title }}" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="category">{{category}}:</label>
+            <div class="col-sm-10">
+              <select name="category[]" id="post_category" class="form-control" multiple="">
+
+                {% for category in categories %}
+                <option value="{{ category.category_id }}"
+                {% for post_category in post_categories %}
+                  {% if post_category.blog_category_id == category.category_id %}
+                    selected="" 
+                  {% endif %}
+                {% endfor %}
+                >{{ category.name }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="description">{{description}}:</label>
+              <div class="col-sm-10">
+              <textarea class="form-control" data-toggle="summernote" name="description" rows="5" id="description"placeholder="description" required="required">{{ post.description }}</textarea>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="col-sm-2 control-label" for="description">{{featured_image}}:</label>
+              <div>
+              <a href="#" id="thumb-image" data-toggle="image" class="img-thumbnail">
+                <img class="" src="{{ thumb }}" alt="" title="" data-placeholder="{{ placeholder }}" width="300" height="150" />
+              </a>
+
+               <input type="hidden" name="featured_image" value="{{ post.blog_image }}" id="input-image" />
+             </div>
+            </div>
+            <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{meta_title}}</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="meta_title" placeholder="Enter Meta Title" value="{{post.meta_title}}" required="required">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-product">{{ entry_product }}</label>
+            <div class="col-sm-10">
+              <input type="text" name="product_info" value="" placeholder="{{ entry_product }}" id="input-product" class="form-control" />
+              <div id="featured-product" class="well well-sm" style="height: 150px; overflow: auto;">
+                {% for product in products %}
+                <div id="featured-product{{ product.product_id }}"><i class="fa fa-minus-circle"></i> {{ product.name }}
+                  <input type="hidden" name="product[]" value="{{ product.product_id }}" />
+                </div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+          <!-- new additon meta description -->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{meta_description}}</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="meta_description" placeholder="Enter Meta Description" value="{{post.meta_description}}" required="required">
+            </div>
+          </div>
+          <!-- new additon meta keywords -->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{meta_keywords}}</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="meta_keywords" placeholder="Enter Meta Keywords" value="{{post.meta_keywords}}" required="required">
+            </div>
+          </div>
+          <!-- new additon meta slug -->
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{blog_slug}}</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" name="slug" placeholder="Enter Post's Slug" value="{{post.slug}}" required="required">
+            </div>
+          </div>
+          <input type="hidden" id="tags2" name="tags"  value="">
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{tags}}:</label>
+            <div class="col-sm-10">
+              <div id="my-tag-list" class="tag-list"></div>
+            </div>
+            <label class="col-sm-2 control-label" for="input-status"></label>
+            <div class="col-sm-10">
+              <p style="color:#01afe8;">Press Enter Key to Add Tags</p>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label" for="input-status">{{ entry_status }}</label>
+            <div class="col-sm-10">
+              <select name="status" id="input-status" class="form-control">
+                {% if status == 'Published' %}
+                  <option value="{{ text_publish }}" selected="selected">{{ text_publish }}</option>
+                  <option value="{{ text_draft }}">{{ text_draft }}</option>
+                {% else  %}
+                  <option value="{{ text_publish }}" >{{ text_publish }}</option>
+                  <option value="{{ text_draft }}" selected="selected">{{ text_draft }}</option>
+                {% endif %}
+              </select>
+            </div>
+          </div>  
+          </div>
+        </form>
+      </div>
+    </div>
+</div>
+<script src="view/javascript/tags/js/bootstrap-tags.js" type="text/javascript"></script>
+<link href="view/javascript/tags/css/bootstrap-tags.css" type="text/css" rel="stylesheet" media="screen" />
+
+<script type="text/javascript" src="view/javascript/summernote/summernote.js"></script>
+<link href="view/javascript/summernote/summernote.css" rel="stylesheet" />
+<script type="text/javascript" src="view/javascript/summernote/summernote-image-attributes.js"></script> 
+<script type="text/javascript" src="view/javascript/summernote/opencart.js"></script>
+
+<script type="text/javascript">
+  
+  jQuery(document).ready(function($) {
+    var json_tags = {{ a_tags }};
+    var tags_array = [];
+
+    $.each(json_tags, (index, val) => {
+      tags_array.push(val.tag);
+    });
+    
+    $('#my-tag-list').tags({
+      tagData:tags_array,
+      suggestions:["basic", "suggestions"],
+      tagSize:['lg'],
+      promptText:['  Enter tags...'],
+    });
+
+   
+  });
+
+   function inputTags() {
+    var values = $('#my-tag-list').tags().getTags();
+    $("input#tags2").val(values);  
+  }
+
+</script>
+<script>
+  $(function() {
+     $('#my-tag-list').tags({
+      tagData:[],
+      suggestions:[],
+      tagSize:['lg'],
+      promptText:['  Enter tags...'],
+    });
+    
+  });
+  
+  function inputTags() {
+    var values = $('#my-tag-list').tags().getTags();
+    $("input#tags2").val(values);  
+  }
+  
+
+  $('input[name=\'product_info\']').autocomplete({
+  source: function(request, response) {
+    $.ajax({
+      url: 'index.php?route=extension/module/blog_mgmt/productAutocomplete&user_token={{ user_token }}&filter_name=' +  encodeURIComponent(request),
+      dataType: 'json',
+      success: function(json) {
+        response($.map(json, function(item) {
+          return {
+            label: item['name'],
+            value: item['product_id']
+          }
+        }));
+      }
+    });
+  },
+  select: function(item) {
+    $('input[name=\'product_info\']').val('');
+    
+    $('#featured-product' + item['value']).remove();
+    
+    $('#featured-product').append('<div id="featured-product' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product[]" value="' + item['value'] + '" /></div>');  
+  }
+});
+  
+$('#featured-product').delegate('.fa-minus-circle', 'click', function() {
+  $(this).parent().remove();
+});
+
+
+</script>
+{{ footer }}
