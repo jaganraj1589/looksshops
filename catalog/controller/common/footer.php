@@ -68,6 +68,11 @@ class ControllerCommonFooter extends Controller
 			$key['href'] = $this->url->link('extension/blog/article', 'article_id=' . $key['article_id']);
 		});
 
+		$data['telephone'] = $this->config->get('config_telephone');
+		$data['email'] = $this->config->get('config_email');
+		$data['address'] = $this->config->get('config_address');
+		$data['comment'] = $this->config->get('config_comment');
+
 		return $this->load->view('common/footer', $data);
 	}
 }
