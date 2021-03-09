@@ -5,3 +5,171 @@
 2021-02-04 11:07:16 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart-3.0.3.7\system\library\mail\mail.php on line 77
 2021-02-04 11:07:18 - PHP Warning:  mail(): Failed to connect to mailserver at &quot;localhost&quot; port 25, verify your &quot;SMTP&quot; and &quot;smtp_port&quot; setting in php.ini or use ini_set() in C:\xampp\htdocs\opencart-3.0.3.7\system\library\mail\mail.php on line 77
 2021-02-26 6:46:20 - PHP Warning:  mysqli::__construct(): (HY000/1049): Unknown database 'looksshops' in C:\xampp-2\htdocs\looksshops\system\library\db\mysqli.php on line 7
+2021-03-09 17:47:37 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:47:39 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:47:43 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:47:43 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:47:43 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:47:43 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:49:02 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:49:06 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:49:06 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:49:06 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:49:06 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:49:44 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:50:32 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:50:35 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:35 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:35 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:50:35 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:50:50 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:50:53 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:53 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:50:53 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:50:53 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:51:28 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:51:39 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:51:39 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:51:39 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:51:39 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:52:17 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:17 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:17 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:52:17 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:52:21 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:21 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:52:21 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:52:21 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:53:28 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:53:37 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:53:47 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:53:55 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:59:16 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:59:18 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 17:59:20 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:59:20 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 17:59:20 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:59:20 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 17:59:26 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:02:37 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:02:40 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:44 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:46 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:49 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:51 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:51 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:52 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:54 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:55 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:57 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:03:59 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:06:31 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:31 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:31 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:31 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:31 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:06:37 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:37 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:37 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:37 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:37 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:06:41 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:41 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:41 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:41 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:41 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:06:48 - PHP Notice:  Undefined offset: 1 in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 40
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 138
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:48 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 316
+2021-03-09 18:06:48 - PHP Warning:  A non-numeric value encountered in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:48 - PHP Warning:  Division by zero in /var/www/html/shanid/looksshops/catalog/controller/smart_filter/smart_filter.php on line 329
+2021-03-09 18:06:48 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:17:02 - PHP Notice:  Undefined variable: total_amount in /var/www/html/shanid/looksshops/catalog/controller/common/cart.php on line 139
+2021-03-09 18:17:46 - PHP Warning:  imagepng(/var/www/html/shanid/looksshops/image/cache/catalog/purse-online-47x47.png): failed to open stream: Permission denied in /var/www/html/shanid/looksshops/system/library/image.php on line 125
+2021-03-09 18:17:46 - PHP Warning:  imagepng(/var/www/html/shanid/looksshops/image/cache/catalog/purse-online-47x47.png): failed to open stream: Permission denied in /var/www/html/shanid/looksshops/system/library/image.php on line 125
+2021-03-09 18:18:15 - PHP Warning:  imagepng(/var/www/html/shanid/looksshops/image/cache/catalog/purse-online-47x47.png): failed to open stream: Permission denied in /var/www/html/shanid/looksshops/system/library/image.php on line 125
+2021-03-09 18:18:23 - PHP Warning:  imagepng(/var/www/html/shanid/looksshops/image/cache/catalog/purse-online-47x47.png): failed to open stream: Permission denied in /var/www/html/shanid/looksshops/system/library/image.php on line 125
+2021-03-09 18:18:26 - PHP Warning:  imagepng(/var/www/html/shanid/looksshops/image/cache/catalog/purse-online-47x47.png): failed to open stream: Permission denied in /var/www/html/shanid/looksshops/system/library/image.php on line 125
