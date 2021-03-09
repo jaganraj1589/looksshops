@@ -2070,9 +2070,12 @@ color: white;
 
 .inlineDropdown a{
 
-  font-size: 0.8em;
+  font-size: 1em;
 }
-
+.buttons .btn-primary, .well .btn-primary{
+  background-color: #139929;
+  border-color: #139929;
+}
 .copyright {
 
   padding: 20px 0;
@@ -2095,7 +2098,7 @@ color: white;
 
   .copyright a:hover {
 
-    color:#007bff; }
+    color:#139929; }
 
 
 
@@ -2734,7 +2737,7 @@ ul{ padding-left:0px;}
 
 
 
-.header-C{ ;box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.1);}
+.header-C{ box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.1);}
 
 .breadcrumb-content { margin-top:10px;}
 
@@ -2742,7 +2745,7 @@ ul{ padding-left:0px;}
 
 .breadcrumb-content ul li.has-child::before{ content:'/';}
 
-
+.breadcrumb-content ul li.has-child:last-child::before{ content:'';}
 
  .dir-pag{ margin-top:30px;}
 

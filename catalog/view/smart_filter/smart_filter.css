@@ -318,4 +318,5 @@ transform: rotate(45deg);
 .rangeText input{
   margin: 0 2%;
   border: none;
+  width: 45%;
 }
