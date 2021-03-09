@@ -74,6 +74,7 @@ class ControllerCommonHeader extends Controller
 		$data['shopping_cart'] = $this->url->link('checkout/cart');
 		$data['checkout'] = $this->url->link('checkout/checkout', '', true);
 		$data['contact'] = $this->url->link('information/contact');
+		$data['returns'] = $this->url->link('information/returns');
 		$data['telephone'] = $this->config->get('config_telephone');
 		$data['email'] = $this->config->get('config_email');
 
