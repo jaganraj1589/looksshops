@@ -2061,6 +2061,7 @@ color: white;
     padding: 0px !important;
 
     line-height: 2;
+    font-weight: bold;
 
 }
 
@@ -2071,6 +2072,7 @@ color: white;
 .inlineDropdown a{
 
   font-size: 1em;
+  font-weight: bold;
 }
 .buttons .btn-primary, .well .btn-primary{
   background-color: #139929;
@@ -3029,7 +3031,13 @@ textarea.custom-form {
 
 	
 
-	
+	@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 0.4rem;
+      padding-left: 0.4rem;
+      font-weight: bold;
+  }
+  }
 
 	
 
