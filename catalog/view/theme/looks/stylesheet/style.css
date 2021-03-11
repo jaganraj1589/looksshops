@@ -2078,6 +2078,13 @@ color: white;
   background-color: #139929;
   border-color: #139929;
 }
+.cardsImge{
+  max-width: 200px;
+  margin-top: 20px;
+}
+.cardsImge img{
+  width: 100%;
+}
 .copyright {
 
   padding: 20px 0;
