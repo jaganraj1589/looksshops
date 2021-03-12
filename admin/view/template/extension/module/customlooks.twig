@@ -71,9 +71,9 @@
             <label class="col-sm-2 control-label" for="input-product"><span data-toggle="tooltip" title="{{ help_product }}">{{ entry_product }}</span></label>
             <div class="col-sm-10">
               <input type="text" name="product_name" value="" placeholder="{{ entry_product }}" id="input-product" class="form-control" />
-              <div id="featured-product" class="well well-sm" style="height: 150px; overflow: auto;">
+              <div id="custom-looks" class="well well-sm" style="height: 150px; overflow: auto;">
                 {% for product in products %}
-                <div id="featured-product{{ product.product_id }}"><i class="fa fa-minus-circle"></i> {{ product.name }}
+                <div id="custom-looks{{ product.product_id }}"><i class="fa fa-minus-circle"></i> {{ product.name }}
                   <input type="hidden" name="product[]" value="{{ product.product_id }}" />
                 </div>
                 {% endfor %}
@@ -112,13 +112,13 @@ $('input[name=\'product_name\']').autocomplete({
 	select: function(item) {
 		$('input[name=\'product_name\']').val('');
 		
-		$('#featured-product' + item['value']).remove();
+		$('#custom-looks' + item['value']).remove();
 		
-		$('#featured-product').append('<div id="featured-product' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product[]" value="' + item['value'] + '" /></div>');	
+		$('#custom-looks').append('<div id="custom-looks' + item['value'] + '"><i class="fa fa-minus-circle"></i> ' + item['label'] + '<input type="hidden" name="product[]" value="' + item['value'] + '" /></div>');	
 	}
 });
 	
-$('#featured-product').delegate('.fa-minus-circle', 'click', function() {
+$('#custom-looks').delegate('.fa-minus-circle', 'click', function() {
 	$(this).parent().remove();
 });
 //--></script></div>

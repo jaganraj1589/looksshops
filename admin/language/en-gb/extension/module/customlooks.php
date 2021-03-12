@@ -12,3 +12,5 @@ $_['entry_status']      = 'Status';
 // Error
 $_['error_permission']  = 'Warning: You do not have permission to modify Custom Looksshops Module module!';
 $_['error_name']        = 'Module Name must be between 3 and 64 characters!';
+$_['entry_product']    = 'Products';
+$_['entry_limit']      = 'Limit';
