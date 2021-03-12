@@ -61,10 +61,13 @@
               {% for product in products %}
                 <div class="col-5 mob-ml ">
                   <!--   <div class="row"> -->
-                  <div class="item ipad-width-img ov1" data-food="cars"> <img src="{{ product.thumb }}" alt="{{product.name}}" class="img-responsive image">
-                    <div class="overlay">
+                  <div class="item ipad-width-img ov1" data-food="cars"> 
+                  <div style="position:relative;">
+                   <img src="{{ product.thumb }}" alt="{{product.name}}" class="img-responsive image">
+                   <div class="overlay">
                       <div class="text"> <button type="button" class="btn btn-secondary" onclick="cart.add('{{ product.product_id }}');">Add to Cart</button> <a href="#" onclick="wishlist.add('{{ product.product_id }}');"> <span class="dot-gal"><img src="img/love-gal.png"></span></a></div>
                     </div>
+                  </div>
                     <div>
                       <h5><a href="{{product.href}}">{{product.name}}</a></h5>
                       <p>{{product.price}}</p>
