@@ -2,3 +2,7 @@
 deployment:
     tasks:
         - export DEPLOYPATH=/home/newlookslookssho/public_html/
+        - /bin/cp -R admin $DEPLOYPATH
+        - /bin/cp -R catalog $DEPLOYPATH
+        - /bin/cp -R image $DEPLOYPATH
+        - /bin/cp -R img $DEPLOYPATH
