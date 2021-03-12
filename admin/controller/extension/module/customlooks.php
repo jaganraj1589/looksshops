@@ -113,6 +113,42 @@ class ControllerExtensionModuleCustomlooks extends Controller
       $data['status'] = '';
     }
 
+    if (isset($this->request->post['banner1'])) {
+      $data['banner1'] = $this->request->post['banner1'];
+    } elseif (!empty($module_info)) {
+      $data['banner1'] = $module_info['banner1'];
+    } else {
+      $data['banner1'] = '';
+    }
+
+    if (isset($this->request->post['banner2'])) {
+      $data['banner2'] = $this->request->post['banner2'];
+    } elseif (!empty($module_info)) {
+      $data['banner2'] = $module_info['banner2'];
+    } else {
+      $data['banner2'] = '';
+    }
+
+    $this->load->model('tool/image');
+
+    if (isset($this->request->post['banner1']) && is_file(DIR_IMAGE . $this->request->post['banner1'])) {
+      $data['thumb'] = $this->model_tool_image->resize($this->request->post['banner1'], 100, 100);
+    } elseif (!empty($module_info) && is_file(DIR_IMAGE . $module_info['banner1'])) {
+      $data['thumb'] = $this->model_tool_image->resize($module_info['banner1'], 100, 100);
+    } else {
+      $data['thumb1'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+    }
+
+    if (isset($this->request->post['banner2']) && is_file(DIR_IMAGE . $this->request->post['banner2'])) {
+      $data['thumb'] = $this->model_tool_image->resize($this->request->post['banner2'], 100, 100);
+    } elseif (!empty($module_info) && is_file(DIR_IMAGE . $module_info['banner2'])) {
+      $data['thumb'] = $this->model_tool_image->resize($module_info['banner2'], 100, 100);
+    } else {
+      $data['thumb2'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+    }
+
+    $data['placeholder'] = $this->model_tool_image->resize('no_image.png', 100, 100);
+
     $this->load->model('localisation/language');
     $data['languages'] = $this->model_localisation_language->getLanguages();
 

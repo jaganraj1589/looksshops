@@ -86,6 +86,18 @@
               <input type="text" name="limit" value="{{ limit }}" placeholder="{{ entry_limit }}" id="input-limit" class="form-control" />
             </div>
           </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">{{ entry_banner1 }}</label>
+            <div class="col-sm-10"><a href="" id="thumb-image" data-toggle="banner1" class="img-thumbnail"><img src="{{ thumb1 }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a>
+              <input type="hidden" name="banner1" value="{{ banner1 }}" id="input-image" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">{{ entry_banner2 }}</label>
+            <div class="col-sm-10"><a href="" id="thumb-image" data-toggle="banner2" class="img-thumbnail"><img src="{{ thumb2 }}" alt="" title="" data-placeholder="{{ placeholder }}" /></a>
+              <input type="hidden" name="banner2" value="{{ banner2 }}" id="input-image" />
+            </div>
+          </div>
         </form>
       </div>
     </div>
