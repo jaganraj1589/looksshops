@@ -70,11 +70,13 @@
       <div class="carousel-item">
         {% endif %}
         <img src="{{ banner.image }}" alt="{{ banner.title }}" />
+        {% if banner.title %}
         <div class="text-box text-box-adj">
           <h2 class="wow slideInRight" data-wow-duration="2s">
             {{ banner.title }}
           </h2>
         </div>
+        {% endif %}
       </div>
       {% set inc = inc + 1 %} 
       {% endfor %} {#
