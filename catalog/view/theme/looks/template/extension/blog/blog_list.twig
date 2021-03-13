@@ -19,10 +19,12 @@
                             {% for article in articles %}
                             <div class="blog-item">                              
                                 <div class="blog-header">
+                                    {% if article.blog_image %}
                                     <div class="blog-image">
                                         <a href="{{article.href}}">
                                         <img class=" img-responsive" src="{{ article.blog_image }}" title="{{ heading_title }}" alt="{{ heading_title }}" /></a>
                                     </div>
+                                    {% endif %}
                                     <div class="blog-details">
                                         <a href="{{article.href}}"><h2 class="blog-title heading_font sans-serif">{{article.title}}</h2></a>
                                         <ul class="list-unstyled">
