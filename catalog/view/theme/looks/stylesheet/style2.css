@@ -15946,7 +15946,7 @@ box-shadow:         0px 2px 8px 0px rgba(50, 50, 50, 0.1);
 
 }
 
-.pagination-section .pagination li a
+.pagination-section .pagination li a, .pagination-section .pagination li span
 
 {
 
@@ -15984,7 +15984,7 @@ box-shadow:         0px 2px 8px 0px rgba(50, 50, 50, 0.1);
 
 }
 
-.pagination-section .pagination li.active a
+.pagination-section .pagination li.active a, .pagination-section .pagination li.active span
 
 {
 

@@ -1518,7 +1518,7 @@ box-shadow:         0px 2px 8px 0px rgba(50, 50, 50, 0.1);
 
 .bg-light{ padding-left:0px; padding-right:0px;}
 
-.logoC{ overflow:hidden; float:left; margin-right:30px; float:left;}
+.logoC{ overflow:hidden;  margin-right:30px;     width: 35%;}
 
 
 
@@ -1560,7 +1560,7 @@ max-width: 20%;}
 
 
 
-li.nav-item{ margin:0px 0px!important; font-size:14px;}
+li.nav-item{ margin:0px 0px!important; font-size:1em;}
 
  .nav-tabs a.nav-link.active{ background:green; color:#FFFFFF; }
 
@@ -1577,13 +1577,19 @@ li.nav-item{ margin:0px 0px!important; font-size:14px;}
 .tabC h2{ margin-bottom:30px;     border-left: solid 4px #139929;
   padding-left: 0.3em;}
 
-
+.blog-item{
+  padding: 1em;
+  background: #fff;
+  margin: 20px 0;
+  border-radius: 9px;
+}
 
 .blog-button{
   display: flex;
   justify-content: space-between;
   margin-top: 1em;
   margin-bottom: 1em;
+  align-items: center;
 }
 
 .blog-button .btn-primary{
@@ -1597,6 +1603,9 @@ li.nav-item{ margin:0px 0px!important; font-size:14px;}
 }
 .show-m{ margin-top:50px;}
 
+.pagination li{
+  margin: 0 10px;
+}
 
 
 .top-bar a{ color:#FFFFFF!important;}
@@ -1936,6 +1945,7 @@ color: white;
     transition: 0.2s 0.5s;
     display: block;
     visibility: hidden;
+    min-width: 12rem;
 }
 
 
@@ -1964,6 +1974,7 @@ color: white;
     transition: 0.2s 0.5s;
     display: block;
     visibility: hidden;
+
 }
 
 
@@ -2074,9 +2085,23 @@ color: white;
   font-size: 1em;
   font-weight: bold;
 }
+.topLogo{
+  display: flex;
+    width: 100%;
+    align-items: center;
+}
 .buttons .btn-primary, .well .btn-primary{
   background-color: #139929;
   border-color: #139929;
+}
+
+
+.blog-header{
+  display: flex;
+}
+.blog-image{
+  width: 25%;
+  margin-right: 20px;
 }
 .cardsImge{
   max-width: 200px;
@@ -3177,7 +3202,21 @@ textarea.custom-form {
 .cts .textArea{ width:100%; border:1px solid #fff; height:90px; color:#532203; padding:10px; margin-bottom:20px;}
 
 
-
+.sampleTitle{
+  text-align: center;
+  color: #333;
+  position: relative;
+}
+.sampleTitle::after{
+  content: '';
+  width: 50px;
+  height: 8px;
+  background-color: #139929;
+  position: absolute;
+  bottom: -15px;
+  transform: translateX(-50%);
+  left: 50%;
+}
 .ctsC{ margin-top:60px;}
 
 .ctsC h1{ font-size:25px; text-transform:uppercase; margin:0px 0px 25px;}
@@ -3188,7 +3227,7 @@ textarea.custom-form {
 
 
 
-.footer input[type="submit"]{ height:47px;}
+.footer input[type="submit"]{ height:45px;}
 
 
 
