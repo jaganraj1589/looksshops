@@ -15960,7 +15960,7 @@ box-shadow:         0px 2px 8px 0px rgba(50, 50, 50, 0.1);
 
     height: 30px;
 
-    padding: 11px;
+    padding: 8px 14px;
 
     text-align: center;
 
@@ -15968,7 +15968,7 @@ box-shadow:         0px 2px 8px 0px rgba(50, 50, 50, 0.1);
 
     color: #7d7777;
 
-    border-radius: 0px;
+    border-radius: 5px;
 
     background: #ffffff;
 
@@ -16000,7 +16000,7 @@ box-shadow:         0px 2px 8px 0px rgba(50, 50, 50, 0.1);
 
     height: 30px;
 
-    padding: 11px;
+    padding: 8px 14px;
 
 
 
@@ -16014,7 +16014,7 @@ box-shadow:         0px 2px 8px 0px rgba(50, 50, 50, 0.1);
 
           color: white;
 
-    border-radius: 0px;
+    border-radius: 5px;
 
     background: #4CAF50;
 
