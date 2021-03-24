@@ -6,14 +6,40 @@
 
   <div class="row">
 
-    <div class=" col-lg-4 col-12 col foot-desc"><div class="footerlogo"><img src="img/footer-logo.png"></div> 
+    <div class=" col-lg-3 col-12 col foot-desc"><div class="footerlogo"><img src="img/footer-logo.png"></div> 
 
       <!--headin5_amrc-->
 
       <p class="mb10 mt-4">{{comment}}</p>
 
     </div>
+    <div class=" col-lg-3 col-12 col-sm-6 col ">
 
+      <h5>Help</h5>
+
+      <!--headin5_amrc-->
+
+      <ul class="footer_ul_amrc mt-4">
+
+        {% if informations %}
+          {% for information in informations %}
+            <li><a href="{{ information.href }}">{{ information.title }}</a></li>
+          {% endfor %}
+        {% endif %}
+
+        <li><a href="{{ account }}">Login & Register</a></li>
+
+        {# <li><a href="{{ contact }}">Contact</a></li>
+
+        <li><a href="{{account}}">Share & Care</a></li>
+
+        <li><a href="">Downloads</a></li> #}
+
+      </ul>
+
+      <!--footer_ul_amrc ends here-->
+
+    </div>
     <div class=" col-lg-2 col-12 col-sm-6 col ">
 
       <h5>Help</h5>
@@ -42,7 +68,7 @@
 
     </div>
 
-    <div class=" col-lg-3  col-12 col-sm-6 col">
+    <div class=" col-lg-2  col-12 col-sm-6 col">
 
       <h5>Latest Blog</h5>
 
@@ -77,7 +103,7 @@
 
     </div>
 
-    <div class=" col-lg-3  col-12   sm-view">
+    <div class=" col-lg-2  col-12 col-sm-6  sm-view">
 
       <h5>Contact us</h5>
 

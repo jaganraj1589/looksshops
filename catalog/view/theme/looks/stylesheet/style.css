@@ -2654,7 +2654,7 @@ footer{  padding:20px 0px;}
 
 .footer ul .fa{ margin-right:5px;}
 
-.footer ul li a{ color:#ccc;}
+.footer ul li a{ color:#ccc; word-break: break-all;}
 
 .form-inline input[type="text"], input[type="submit"]{ font-size:13px;}
 
