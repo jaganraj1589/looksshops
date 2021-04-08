@@ -34,18 +34,21 @@
           else %} {% set class = 'col-sm-6' %} {% endif %}
           <div class="{{ class }}">
             {% if thumb or images %}
-            {% if thumb %}
-            <div class="big-image-slider-wrapper big-image-slider-wrapper--change-cursor">
-              <div class="ht-slick-slider big-image-slider99"
-                            data-slick-setting='{
+            <div
+              class="big-image-slider-wrapper big-image-slider-wrapper--change-cursor"
+            >
+              <div
+                class="ht-slick-slider big-image-slider99"
+                data-slick-setting='{
                                 "slidesToShow": 1,
                                 "slidesToScroll": 1,
                                 "dots": false,
                                 "autoplay": false,
                                 "autoplaySpeed": 5000,
-                                "speed": 1000
+                                "speed": 1000,
+                                "asNavFor": ".slider-nav"
                             }'
-                            data-slick-responsive='[
+                data-slick-responsive='[
                                 {"breakpoint":1501, "settings": {"slidesToShow": 1} },
                                 {"breakpoint":1199, "settings": {"slidesToShow": 1} },
                                 {"breakpoint":991, "settings": {"slidesToShow": 1} },
@@ -53,42 +56,54 @@
                                 {"breakpoint":575, "settings": {"slidesToShow": 1} },
                                 {"breakpoint":479, "settings": {"slidesToShow": 1} }
                             ]'
-                            >
-            <!--=======  big image slider single item  =======-->
-            <div class="big-image-slider-single-item"> <img src="http://looksshops.com/assets/img/products/big1-1.jpg" class="img-fluid" alt=""> </div>
-            <!--=======  End of big image slider single item  =======-->
-            <!--=======  big image slider single item  =======-->
-            <!--              
+              >
+                <!--=======  big image slider single item  =======-->
+                {% if thumb %}{% for image in images %}
+                <div class="big-image-slider-single-item">
+                  <img
+                    src="{{ popup }}"
+                    title="{{ heading_title }}"
+                    alt="{{ heading_title }}"
+                    class="img-fluid"
+                  />
+                </div>
+                {% endfor %} {% endif %}
+                <!--=======  End of big image slider single item  =======-->
+                <!--=======  big image slider single item  =======-->
+                <!--              
                             <div class="big-image-slider-single-item">
                                 <img src="assets/img/products/big1-2.jpg" class="img-fluid" alt="">
                             </div> -->
-            <!--=======  End of big image slider single item  =======-->
-            <!--=======  big image slider single item  =======-->
-            <!--   <div class="big-image-slider-single-item">
+                <!--=======  End of big image slider single item  =======-->
+                <!--=======  big image slider single item  =======-->
+                <!--   <div class="big-image-slider-single-item">
                                 <img src="assets/img/products/big1-3.jpg" class="img-fluid" alt="">
                             </div> -->
-            <!--=======  End of big image slider single item  =======-->
-            <!--=======  big image slider single item  =======-->
-            <!--  <div class="big-image-slider-single-item">
+                <!--=======  End of big image slider single item  =======-->
+                <!--=======  big image slider single item  =======-->
+                <!--  <div class="big-image-slider-single-item">
                                 <img src="assets/img/products/big1-4.jpg" class="img-fluid" alt="">
                             </div> -->
-            <!--=======  End of big image slider single item  =======-->
-            <!--=======  big image slider single item  =======-->
-            <!-- <div class="big-image-slider-single-item">
+                <!--=======  End of big image slider single item  =======-->
+                <!--=======  big image slider single item  =======-->
+                <!-- <div class="big-image-slider-single-item">
                                 <img src="assets/img/products/big1-5.jpg" class="img-fluid" alt="">
                             </div> -->
-            <!--=======  End of big image slider single item  =======-->
-            <!--=======  big image slider single item  =======-->
-            <!--  <div class="big-image-slider-single-item">
+                <!--=======  End of big image slider single item  =======-->
+                <!--=======  big image slider single item  =======-->
+                <!--  <div class="big-image-slider-single-item">
                                 <img src="assets/img/products/big1-6.jpg" class="img-fluid" alt="">
                             </div> -->
-            <!--=======  End of big image slider single item  =======-->
-          </div>
+                <!--=======  End of big image slider single item  =======-->
+              </div>
             </div>
-            {% endif %} {% if images %} {% for image in images %}
-            <div class="small-image-slider-wrapper small-image-slider-wrapper--quickview">
-              <div class="ht-slick-slider small-image-slider"
-                                data-slick-setting='{
+
+            <div
+              class="small-image-slider-wrapper small-image-slider-wrapper--quickview"
+            >
+              <div
+                class="ht-slick-slider small-image-slider slider-nav"
+                data-slick-setting='{
                                     "slidesToShow": 4,
                                     "slidesToScroll": 1,
                                     "dots": false,
@@ -101,7 +116,7 @@
                                     "prevArrow": {"buttonClass": "slick-prev", "iconClass": "ion-ios-arrow-left" },
                                     "nextArrow": {"buttonClass": "slick-next", "iconClass": "ion-ios-arrow-right" }
                                 }'
-                                data-slick-responsive='[
+                data-slick-responsive='[
                                     {"breakpoint":1501, "settings": {"slidesToShow": 4} },
                                     {"breakpoint":1199, "settings": {"slidesToShow": 4} },
                                     {"breakpoint":991, "settings": {"slidesToShow": 4} },
@@ -109,7 +124,16 @@
                                     {"breakpoint":575, "settings": {"slidesToShow": 3} },
                                     {"breakpoint":479, "settings": {"slidesToShow": 2} }
                                 ]'
-                                >
+              >
+                {% if images %} {% for image in images %}
+                <div class="small-image-slider-single-item image-additional">
+                  <img
+                    src="{{ image.thumb }}"
+                    title="{{ heading_title }}"
+                    alt="{{ heading_title }}"
+                  />
+                </div>
+                {% endfor %} {% endif %}
                 <!--=======  small image slider single item  =======-->
                 <!-- <div class="small-image-slider-single-item">
                                     <img src="assets/img/products/small1-1.jpg" class="img-fluid" alt="">
@@ -142,9 +166,8 @@
                 <!--=======  End of small image slider single item  =======-->
               </div>
             </div>
-            {% endfor %} {% endif %}
-            {% endif %} 
-            {# {% if thumb or images %}
+
+            {% endif %} {# {% if thumb or images %}
             <ul class="thumbnails">
               {% if thumb %}
               <li>
@@ -174,7 +197,6 @@
               {% endfor %} {% endif %}
             </ul>
             {% endif %} #}
-          
           </div>
           {% if column_left or column_right %} {% set class = 'col-sm-6' %} {%
           else %} {% set class = 'col-sm-6' %} {% endif %}
@@ -739,26 +761,30 @@
                 href="#tab-description"
                 role="tab"
                 aria-selected="true"
-                >{{
-                  tab_description
-                }}</a
+                >{{ tab_description }}</a
               >
               {% if attribute_groups %}
-           
-              <a class="nav-item nav-link" href="#tab-specification" data-toggle="tab">{{
-                tab_attribute
-              }}</a>
-           
-            {% endif %} {% if review_status %}
-           
-              <a class="nav-item nav-link" href="#tab-review" data-toggle="tab">{{ tab_review }}</a>
-           
-            {% endif %}
-            
+
+              <a
+                class="nav-item nav-link"
+                href="#tab-specification"
+                data-toggle="tab"
+                >{{ tab_attribute }}</a
+              >
+
+              {% endif %} {% if review_status %}
+
+              <a
+                class="nav-item nav-link"
+                href="#tab-review"
+                data-toggle="tab"
+                >{{ tab_review }}</a
+              >
+
+              {% endif %}
             </div>
           </nav>
 
-          
           <div class="tab-content">
             <div class="tab-pane active" id="tab-description">
               {{ description }}
@@ -1008,6 +1034,8 @@
   		}
   	}, 500);
   });
+
+
   //-->
 </script>
 <script type="text/javascript">
